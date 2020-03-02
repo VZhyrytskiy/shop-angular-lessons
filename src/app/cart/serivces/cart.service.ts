@@ -7,7 +7,7 @@ class CartService {
   public products: ProductModel[];
   public ObservableProducts: BehaviorSubject<ProductModel[]>;
 
-  constructor(){
+  constructor() {
     this.products = [];
     this.ObservableProducts = new BehaviorSubject<ProductModel[]>(this.products);
   }

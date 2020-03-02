@@ -13,6 +13,7 @@ import { CartService } from 'src/app/cart/serivces/cart.service';
 export class ProductComponentComponent implements OnInit {
   Category = Category;
   @Input() model: ProductModel;
+  // tslint:disable-next-line: variable-name
   constructor(private _cartService: CartService) { }
 
   ngOnInit(): void {
