@@ -1,9 +1,16 @@
-<div class="border border-primary"> <p>{{Category[this.model.category]}}</p>
-    <p>{{this.model.description}}</p>
-    <p>{{this.model.name}}</p>
-    <p>{{this.model.price}}</p>
-    <p>{{this.model.isAvailable}}</p>
-    <p *ngFor="let city of this.model.availableIn">{{city}}</p>
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+    <h5 class="card-title">Name: {{this.model.name}}</h5>
+    <div class="card-text">{{Category[this.model.category]}}
+    Description: {{this.model.description}}
+    Price: {{this.model.price}}
+    Avaliability: {{this.model.isAvailable ? 'Avaliable' : 'Out of stock'}}
+    </div>
+    <div>
+      <div class="card-text">Avaliable in such places:
+      <div *ngFor="let city of this.model.availableIn">{{city}}</div>
+      </div>
 
-    <button (click)="onBuy($event)" >Buy</button>
+    <button class="btn btn-primary" *ngIf="this.model.isAvailable" (click)="onBuy($event)" >Buy</button>
+</div>
 </div>

@@ -16,7 +16,7 @@ class ProductService {
         availableIn: ['Village1', 'Village2', 'Village3', 'Village4'],
         description: 'Something descripted here for another product',
         isAvailable: true,
-        name: 'Bat',
+        name: 'Bar',
         price: 228
       }
     ];
