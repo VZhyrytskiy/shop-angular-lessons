@@ -1,0 +1,9 @@
+
+<div class="card" style="width: 18rem;" *ngIf="this.model.length > 0">
+  <div class="p-3 mb-2 bg-secondary text-white">
+    <p>Items in cart:</p>
+    <div *ngFor="let product of this.model">
+      <p class="prsimary">{{product.name}}</p>
+    </div>
+  </div>
+</div>
