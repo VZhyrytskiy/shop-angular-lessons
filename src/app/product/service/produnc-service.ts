@@ -25,3 +25,4 @@ class ProductService {
 }
 
 export {ProductService};
+// Руками создавали сервис? Не по стайлгайду.

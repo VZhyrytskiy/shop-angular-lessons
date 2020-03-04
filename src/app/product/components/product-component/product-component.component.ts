@@ -11,9 +11,11 @@ import { CartService } from 'src/app/cart/serivces/cart.service';
 
 
 export class ProductComponentComponent implements OnInit {
-  Category = Category;
+  Category = Category; // хоть и понятно, что происходит, но выгляит не очень
   @Input() model: ProductModel;
   // tslint:disable-next-line: variable-name
+  // нет необходимости использовать подчеркивание, TypeScript и так не даст вам возможности испольовать приватные
+  // поля там, где неположено
   constructor(private _cartService: CartService) { }
 
   ngOnInit(): void {

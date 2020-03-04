@@ -11,7 +11,7 @@ import { CartService } from './cart/serivces/cart.service';
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponentComponent,
+    ProductComponentComponent, // Названия компонентов надо поправить, чтобы два раза не повторялся суффикс
     ProductListComponentComponent,
     CartComponent
   ],
